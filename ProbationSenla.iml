@@ -126,6 +126,14 @@
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="TimeController" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TimeControllerTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="TriggerHandler" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -291,6 +299,14 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="accDisplay" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="accEdit" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="ChildWithMethod" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -306,7 +322,20 @@
                             <option name="name" value="DeleteContact" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="eleteContactComponent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsAccView" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="onBadgetHiden" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="OpportunityAlert" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="slds" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SldsTest" />
@@ -324,29 +353,12 @@
                             <option name="name" value="TimeByTimeZon" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="TimeByTimeZoneComponent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="TimeDateCompanent" />
                             <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="accDisplay" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="accEdit" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="eleteContactComponent" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="ldsAccView" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="onBadgetHiden" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="slds" />
                           </MetadataEntry>
                         </list>
                       </option>
