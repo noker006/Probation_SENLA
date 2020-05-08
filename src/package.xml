@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>RBService</members>
+        <members>Sleep</members>
+        <members>TestLightningControler</members>
+        <members>TestQueue</members>
+        <members>TriggerHandler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>SiteFooter</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>TimeDateCompanent</members>
+        <members>accDisplay</members>
+        <members>accEdit</members>
+        <members>eleteContactComponent</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>48.0</version>
+</Package>

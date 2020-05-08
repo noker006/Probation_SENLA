@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="showResult" type="Boolean" default="false" />
+    <aura:attribute name="buttonEnabled" type="Boolean" default="true" />
+    <aura:attribute name="date" type="datetime"/>
+    <aura:attribute name="dateString" type="String" default="XYZ"/>
+
+    <lightning:card  title="{!$Label.c.TimeDateCompTitleCard}" class="Margin">
+    <lightning:input type="datetime" name="dateTime" label="{!$Label.c.TimeDateCompInputLabel}"  value = "{!v.date}" onchange="{!c.checkForNull}" />
+      <div>
+        <lightning:button class="slds-button slds-button_brand" variant="base" label="{!$Label.c.TimeDateCompButtonLabel}" onclick="{! c.calculateDate }" disabled="{!v.buttonEnabled}"/>
+          <aura:if isTrue="{!v.showResult}">
+           <ui:outputText value="{!v.dateString}"/>
+           <lightning:buttonIconStateful iconName="utility:like" selected="true" alternativeText="Like" />
+          </aura:if>
+      </div>
+    </lightning:card>
+</aura:component>
