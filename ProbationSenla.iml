@@ -95,10 +95,6 @@
                             <option name="name" value="OpportunityAlertControllerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="RBService" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="ScheduleAccountJob" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -114,27 +110,11 @@
                             <option name="name" value="SiteRegisterControllerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Sleep" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="TestLightningControler" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="TestQueue" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="TimeController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TimeControllerTest" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="TriggerHandler" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
@@ -145,10 +125,6 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
-                          <MetadataEntry>
-                            <option name="name" value="SiteFooter" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SiteHeader" />
                           </MetadataEntry>
@@ -164,82 +140,6 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
-                      <option name="entries">
-                        <list>
-                          <MetadataEntry>
-                            <option name="name" value="AnswersHome" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BandwidthExceeded" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="ChangePassword" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Exception" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="FileNotFound" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="ForgotPassword" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="ForgotPasswordConfirm" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="IdeasHome" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="InMaintenance" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="MyProfilePage" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="SiteHome" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="SiteLogin" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="SiteRegister" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="SiteRegisterConfirm" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="SiteTemplate" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="StdExceptionTemplate" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Unauthorized" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="UnderConstruction" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                        </list>
-                      </option>
                       <option name="name" value="ApexPage" />
                     </MetadataType>
                     <MetadataType>
@@ -299,14 +199,6 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="accDisplay" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="accEdit" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="ChildWithMethod" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -320,10 +212,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="DeleteContact" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="eleteContactComponent" />
-                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ldsAccView" />
@@ -354,10 +242,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TimeByTimeZoneComponent" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="TimeDateCompanent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                         </list>
