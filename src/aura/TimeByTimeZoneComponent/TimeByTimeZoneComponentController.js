@@ -11,7 +11,6 @@
             let state = response.getState();
             let err =response.getError();
             if (state === "SUCCESS") {
-                alert('SUCCESS');
                 let dateTime = response.getReturnValue();
                 if(dateTime == null) alert('invalid value');
                 component.set("v.time",dateTime);
