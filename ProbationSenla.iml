@@ -54,24 +54,31 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FactoryAccount" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FactoryContact" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FactoryFeedItem" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FeedItemManager" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FeedItemManagerTest" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FeedItemService" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FeedItemServiceTest" />
+                            <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FirstReastService" />
@@ -291,6 +298,14 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="accDisplay" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="accEdit" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="ChildWithMethod" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -306,7 +321,20 @@
                             <option name="name" value="DeleteContact" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="eleteContactComponent" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsAccView" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="onBadgetHiden" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="OpportunityAlert" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="slds" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SldsTest" />
@@ -326,27 +354,6 @@
                           <MetadataEntry>
                             <option name="name" value="TimeDateCompanent" />
                             <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="accDisplay" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="accEdit" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="eleteContactComponent" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="ldsAccView" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="onBadgetHiden" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="slds" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -539,13 +546,13 @@
                             <option name="name" value="Account.NumberofLocations__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.SLA__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.SLAExpirationDate__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.SLASerialNumber__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Account.SLA__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.UpsellOpportunity__c" />
@@ -569,10 +576,10 @@
                             <option name="name" value="CaseComment.ParentOrigin" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Child__c.Parent__c" />
+                            <option name="name" value="Child__c.num__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Child__c.num__c" />
+                            <option name="name" value="Child__c.Parent__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Contact.Languages__c" />
@@ -590,13 +597,13 @@
                             <option name="name" value="Goal.OrigGoalId__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Group__c.email__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Group__c.Faculty__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Group__c.TextFormula__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Group__c.email__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Lead.CurrentGenerators__c" />
@@ -1007,6 +1014,9 @@
                             <option name="name" value="Solution" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="specialty__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="StreamActivityAccess" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1039,9 +1049,6 @@
                           <MetadataEntry>
                             <option name="name" value="UserProvisioningRequest" />
                           </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="specialty__c" />
-                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="CustomObject" />
@@ -1063,6 +1070,9 @@
                             <option name="name" value="Parent__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="specialty__c-en_US" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Student1__c-en_US" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1073,9 +1083,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="University__c-en_US" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="specialty__c-en_US" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1115,12 +1122,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Parent__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Student1__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="University__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="specialty__c" />
@@ -1219,6 +1220,9 @@
                             <option name="name" value="standard-Forecasting3" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="standard-home" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="standard-Idea" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1264,6 +1268,9 @@
                             <option name="name" value="standard-Recommendation" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="standard-report" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="standard-RevenueElement" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1285,10 +1292,10 @@
                             <option name="name" value="standard-Workspace" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard-home" />
+                            <option name="name" value="Student1__c" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard-report" />
+                            <option name="name" value="University__c" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -1352,18 +1359,6 @@
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
-                            <option name="parentFolder" value="unfiled$public" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SalesNewCustomerEmail" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
@@ -1392,11 +1387,23 @@
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SupportSelfServiceNewLoginandPassword" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/SupportSelfServiceResetPassword" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                         </list>
@@ -1776,6 +1783,9 @@
                             <option name="name" value="Solution-Solution Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="specialty__c-specialty Layout" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Student1__c-Student1 Layout" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1801,9 +1811,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="UserProvisioningRequest-User Provisioning Request Layout" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="specialty__c-specialty Layout" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -2085,6 +2092,9 @@
                             <option name="name" value="Solution.AllUnreviewedSolutions" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="specialty__c.All" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Student1__c.All" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2128,9 +2138,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="WorkFeedbackTemplate.All" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="specialty__c.All" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -2334,6 +2341,9 @@
                             <option name="name" value="Identity User" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="mainSitelable Profile" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="MarketingProfile" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -2365,9 +2375,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Work%2Ecom Only User" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="mainSitelable Profile" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -2494,16 +2501,16 @@
                             <option name="name" value="Account.Nobutton" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="CollaborationGroup.FullTime" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="CollaborationGroup.distance" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="Group__c.FullTime" />
+                            <option name="name" value="CollaborationGroup.FullTime" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Group__c.distance" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Group__c.FullTime" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Metric.Completion" />
@@ -2562,10 +2569,10 @@
                             <option name="name" value="CFO" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="COO" />
+                            <option name="name" value="ChannelSalesTeam" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="ChannelSalesTeam" />
+                            <option name="name" value="COO" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CustomerSupportInternational" />
@@ -2746,10 +2753,10 @@
                             <option name="name" value="FieldService" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="FileUploadAndDownloadSecurity" />
+                            <option name="name" value="FilesConnect" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="FilesConnect" />
+                            <option name="name" value="FileUploadAndDownloadSecurity" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Flow" />
@@ -3263,13 +3270,13 @@
                             <option name="name" value="Salutation" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="ServTerrMemRoleType" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="ServiceAppointmentStatus" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ServiceContractApprovalStatus" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ServTerrMemRoleType" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SocialPostClassification" />
@@ -3389,6 +3396,9 @@
                             <option name="name" value="Solution" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="specialty__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Student1__c" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -3396,9 +3406,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="University__c" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="specialty__c" />
                           </MetadataEntry>
                         </list>
                       </option>
