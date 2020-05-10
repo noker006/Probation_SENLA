@@ -3,9 +3,9 @@ private class FeedItemManagerTest {
 
 	@isTest
 	public static void getFeedItemsByType_ParentId_DefaultValue() {
-		Account acc = FactoryAccount.getAccountByName('Acc');
+		Account acc = DataTestFactory.getAccountByName('Acc');
 		insert acc;
-		FeedItem feedItemAcc = FactoryFeedItem.getFeedItemByType_ParentId('TextPost', acc.Id);
+		FeedItem feedItemAcc = DataTestFactory.getFeedItemByType_ParentId('TextPost', acc.Id);
 		insert feedItemAcc; 
 		Test.startTest();
 			List<FeedItem> reqFeedItem = FeedItemManager.getFeedItemsByType_ParentId('TextPost',acc.Id);
@@ -15,7 +15,7 @@ private class FeedItemManagerTest {
 	}
 	@isTest
 	public static void getFeedItemsByType_ParentId_EmptyFeedItem() {
-		Account acc = FactoryAccount.getAccountByName('Acc');
+		Account acc = DataTestFactory.getAccountByName('Acc');
 		insert acc;
 		Test.startTest();
 			List<FeedItem> reqFeedItem = FeedItemManager.getFeedItemsByType_ParentId('TextPost',acc.Id);
@@ -31,7 +31,7 @@ private class FeedItemManagerTest {
 	}
 	@isTest
 	public static void getFeedItemsByType_ParentId_EmptyContentId() {
-		Account acc = FactoryAccount.getAccountByName('Acc');
+		Account acc = DataTestFactory.getAccountByName('Acc');
 		Test.startTest();
 			List<FeedItem> reqFeedItem = FeedItemManager.getFeedItemsByType_ParentId('TextPost',acc.Id);
 		Test.stopTest();

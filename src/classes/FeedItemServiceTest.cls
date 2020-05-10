@@ -2,11 +2,11 @@
 private class FeedItemServiceTest {
 	@isTest
 	public static void copyTrackedChangeFeedItem_DefaultValue() {
-		Account acc1 = FactoryAccount.getAccountByName('Acc1');	
+		Account acc1 = DataTestFactory.getAccountByName('Acc1');	
 		insert acc1;				
-		Account acc2 = FactoryAccount.getAccountByName('Acc2');
+		Account acc2 = DataTestFactory.getAccountByName('Acc2');
 		insert acc2;
-	    FeedItem feedItemAcc1 = FactoryFeedItem.getFeedItemByType_ParentId('TextPost', acc1.Id);
+	    FeedItem feedItemAcc1 = DataTestFactory.getFeedItemByType_ParentId('TextPost', acc1.Id);
 		insert feedItemAcc1;
 
         Test.startTest();
@@ -19,11 +19,11 @@ private class FeedItemServiceTest {
 	}
 	@IsTest 
 	public static void copyTextPostFeedItem_DefaultValue(){
-		Account acc1 = FactoryAccount.getAccountByName('Acc1');	
+		Account acc1 = DataTestFactory.getAccountByName('Acc1');	
 		insert acc1;				
-		Account acc2 = FactoryAccount.getAccountByName('Acc2');
+		Account acc2 = DataTestFactory.getAccountByName('Acc2');
 		insert acc2;
-	    FeedItem feedItemAcc1 = FactoryFeedItem.getFeedItemByType_ParentId('TextPost' , acc1.Id);
+	    FeedItem feedItemAcc1 = DataTestFactory.getFeedItemByType_ParentId('TextPost' , acc1.Id);
 		insert feedItemAcc1;
 
 		Test.startTest();
@@ -37,8 +37,8 @@ private class FeedItemServiceTest {
 
 	@IsTest 
 	public static void copyTextPostFeedItem_EmptyContentId(){
-		Account acc1 = FactoryAccount.getAccountByName('Acc1');	
-		Account acc2 = FactoryAccount.getAccountByName('Acc2');
+		Account acc1 = DataTestFactory.getAccountByName('Acc1');	
+		Account acc2 = DataTestFactory.getAccountByName('Acc2');
 
 		Test.startTest();
 			List<FeedItem> feedItemsAcc2 = FeedItemService.copyTrackedChange_TextPostFeedItem(  acc1.Id , acc2.Id  , 'TextPost');
@@ -49,11 +49,11 @@ private class FeedItemServiceTest {
 
 	@IsTest 
 	public static void copyTextPostFeedItem_InvalidFeedItemType(){
-		Account acc1 = FactoryAccount.getAccountByName('Acc1');	
+		Account acc1 = DataTestFactory.getAccountByName('Acc1');	
 		insert acc1;				
-		Account acc2 = FactoryAccount.getAccountByName('Acc2');
+		Account acc2 = DataTestFactory.getAccountByName('Acc2');
 		insert acc2;
-	    FeedItem feedItemAcc1 = FactoryFeedItem.getFeedItemByType_ParentId('TextPost' , acc1.Id);
+	    FeedItem feedItemAcc1 = DataTestFactory.getFeedItemByType_ParentId('TextPost' , acc1.Id);
 		insert feedItemAcc1;
 
 		Test.startTest();
@@ -65,11 +65,11 @@ private class FeedItemServiceTest {
 
 	@IsTest
 	public static void copyTextPostFeedItem_AccountContact(){
-		Account acc1 = FactoryAccount.getAccountByName('Acc1');	
+		Account acc1 = DataTestFactory.getAccountByName('Acc1');	
 		insert acc1;				
-		Contact cont = FactoryContact.getContactByName('cont');
+		Contact cont = DataTestFactory.getContactByName('cont');
 		insert cont;
-	    FeedItem feedItemAcc1 = FactoryFeedItem.getFeedItemByType_ParentId('TextPost' , acc1.Id);
+	    FeedItem feedItemAcc1 = DataTestFactory.getFeedItemByType_ParentId('TextPost' , acc1.Id);
 		insert feedItemAcc1;
 
 		Test.startTest();
