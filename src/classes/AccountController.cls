@@ -2,7 +2,7 @@
  * Created by ASUS on 15.05.2020.
  */
 
-public with sharing class AccountController {
+public class AccountController {
     @InvocableMethod
     public static void setCurrentDateTime(){
         List<Account> allAccounts = AccountManager.getAllAccounts();
