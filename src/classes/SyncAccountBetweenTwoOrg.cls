@@ -5,6 +5,6 @@
 public class SyncAccountBetweenTwoOrg {
     @InvocableMethod
     public static void Sync(){
-        Database.executeBatch(new UpdateAndS2SAllAccountBatch(), 20000);
+        Database.executeBatch(new UpdateAndS2SAllAccountBatch(), 10000);
     }
 }
