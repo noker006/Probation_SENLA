@@ -4,10 +4,10 @@
     <option name="connections">
       <list>
         <IlluminatedCloudConnection>
-          <option name="connectionName" value="Probation" />
+          <option name="connectionName" value="Prob" />
           <option name="connectionType" value="MDAPI" />
           <option name="defaultModuleName" value="ProbationSenla" />
-          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/Probation/OfflineSymbolTable.zip" />
+          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/Prob/OfflineSymbolTable.zip" />
         </IlluminatedCloudConnection>
       </list>
     </option>

@@ -5,7 +5,7 @@
 @isTest
 public with sharing class AccountManagerTest {
     @isTest
-    public static void setCurrentDateTime_DefaultValue() {
+    public static void getAllAccounts_DefaultValue() {
         Account acc = DataTestFactory.getAccountByName('Acc');
         insert acc;
         Test.startTest();
@@ -14,7 +14,7 @@ public with sharing class AccountManagerTest {
         System.assertEquals(accounts.size(),1);
     }
     @isTest
-    public static void setCurrentDateTime_NoAccount() {
+    public static void getAllAccounts_NoAccount() {
         Test.startTest();
         List<Account> accounts = AccountManager.getAllAccounts();
         Test.stopTest();
