@@ -27,7 +27,6 @@
         component.set("v.disabledSubmit", disabledSubmit);
     },
     openCreatedRecord: function(component,recordId) {
-        alert(recordId);
         let navEvt = $A.get("e.force:navigateToSObject");
         navEvt.setParams({
             "recordId": recordId

@@ -30,7 +30,6 @@
     },
 
     selectedTypeRecord:function (component, event, helper) {
-        console.log(component.get("v.selectedAccountRecordType"));
         component.set("v.disabledNext",false);
         component.find("forceRecord").getNewRecord(
         "Account",
