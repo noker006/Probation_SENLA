@@ -9,5 +9,29 @@
                     "scope": "Account"
                 });
         homeEvt.fire();
+    },
+    sendToast: function(title,message,type) {
+        let  resultsToast = $A.get("e.force:showToast");
+        resultsToast.setParams({
+            "title": title,
+            "type": type,
+            "message": message,
+        });
+        resultsToast.fire();
+    },
+    setCustomValid: function(component,errorMess,disabledSubmit) {
+        let accNameInput = component.find("accName");
+        let accName = accNameInput.get("v.value");
+        accNameInput.setCustomValidity(errorMess);
+        accNameInput.reportValidity();
+        component.set("v.disabledSubmit", disabledSubmit);
+    },
+    openCreatedRecord: function(component,recordId) {
+        alert(recordId);
+        let navEvt = $A.get("e.force:navigateToSObject");
+        navEvt.setParams({
+            "recordId": recordId
+        });
+        navEvt.fire();
     }
 });

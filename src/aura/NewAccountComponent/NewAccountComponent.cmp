@@ -4,13 +4,15 @@
 
 <aura:component controller="RecordTypeController" implements="lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId" access="global">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
-    <aura:attribute name="selectedAccountRecordType" type="String" default="null"/>
+    <aura:handler name="change" value="{!v.selectedAccountRecordType}" action="{!c.selectedTypeRecord}"/>
+    <aura:attribute name="selectedAccountRecordType" type="Id"/>
     <aura:attribute name="newAccountError" type="String"/>
     <aura:attribute name="listRecordTypes" type="List" />
     <aura:attribute name="accountRecord" type="Account" default="{ 'sobjectType' : 'Account' }"/>
     <aura:attribute name="accountName" type="String"/>
     <aura:attribute name="disabledSubmit" type="Boolean" default="true"/>
-    <aura:attribute name="enableAccountForm" type="Boolean" default="false"/>
+    <aura:attribute name="disabledNext" type="Boolean" default="true"/>
+    <aura:attribute name="enableSelectRecordType" type="Boolean" default="true"/>
     <force:recordData aura:id="forceRecord"
                       recordId="{!v.recordId}"
                       targetFields="{!v.accountRecord}"
@@ -22,28 +24,35 @@
                 <h2 class="slds-text-heading--medium">New Account</h2>
             </div>
             <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
-                <aura:if isTrue="{!not(empty(v.listRecordTypes))}">
-                    <lightning:select  value="{!v.selectedAccountRecordType}" aura:id="accRecordType" name="accRecordType" label="Record Type" class="slds-size--1-of-2 slds-p-horizontal_x-small" required="true" onchange="{!c.selectedTypeRecord}">
-                        <aura:iteration items="{!v.listRecordTypes}" var="item">
-                            <option value="{!item.Id}">{!item.Name}</option>
-                        </aura:iteration>
-                    </lightning:select>
-                </aura:if>
+                <aura:if isTrue="{!v.enableSelectRecordType}">
+                    <lightning:radioGroup name="radioGroupRequired"
+                                          label="Radio Group"
+                                          options="{! v.listRecordTypes}"
+                                          value="{! v.selectedAccountRecordType}"
+                                          type="radio"
+                                          required="true"/>
 
-                <aura:if isTrue="{!v.enableAccountForm}">
-
-                    <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
-                        <lightning:input value="{!v.accountName}" onchange="{!c.accountNameChanged}" aura:id="accName" name="accName" label="Account Name" required="true" class="slds-size--1-of-1 slds-p-horizontal_x-small" />
-                        <lightning:input aura:id="accPhone" name="accPhone" label="Phone" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
-                        <lightning:input aura:id="accFax" name="accFax" label="Fax" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
-                        <lightning:input aura:id="accNumber" name="accNumber" label="AccountNumber" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
-                        <lightning:input aura:id="accSite" name="accSite" label="Site" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
-                    </div>
+                    <aura:set attribute="else">
+                        <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
+                            <lightning:input value="{!v.accountName}" onchange="{!c.accountNameChanged}" aura:id="accName" name="accName" label="Account Name" required="true" class="slds-size--1-of-1 slds-p-horizontal_x-small" />
+                            <lightning:input aura:id="accPhone" name="accPhone" label="Phone" required="true" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                            <lightning:input aura:id="accFax" name="accFax" label="Fax" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                            <lightning:input aura:id="accNumber" name="accNumber" label="AccountNumber" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                            <lightning:input aura:id="accSite" name="accSite" label="Site" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                        </div>
+                    </aura:set>
 
                 </aura:if>
             </div>
             <div class="slds-modal__footer">
-                <lightning:button variant="brand" label="Submit" onclick="{!c.insertNewAccount}" disabled="{!v.disabledSubmit}"/>
+                <aura:if isTrue="{!v.enableSelectRecordType}">
+                    <lightning:button variant="brand" label="Next" onclick="{!c.goToAccountForm}" disabled="{!v.disabledNext}"/>
+
+                    <aura:set attribute="else">
+                        <lightning:button variant="brand" label="Save" onclick="{!c.insertNewAccount}" disabled="{!v.disabledSubmit}"/>
+                    </aura:set>
+
+                </aura:if>
                 <lightning:button variant="neutral" label="Cancel" onclick="{!c.closeModal}" />
             </div>
         </div>

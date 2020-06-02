@@ -10,18 +10,28 @@
                     let err =response.getError();
                     if (state === "SUCCESS") {
                         let listRecordTypes = response.getReturnValue();
-                        component.set("v.listRecordTypes" ,listRecordTypes);
-                    }
-                    else {
-                        console.log("Failed with state: " + state);
-                        console.log("TableComponent err[0].message: " + err[0].message);
+                        if (listRecordTypes.length == 1) {
+                            component.set("v.selectedAccountRecordType", listRecordTypes[0].Id)
+                            component.set("v.enableSelectRecordType", false);
+                        }
+                        let recordTypeOptions = [];
+                        for (var i = 0; i < listRecordTypes.length; i++) {
+                            recordTypeOptions.push({
+                            label:listRecordTypes[i].Name,
+                            value:listRecordTypes[i].Id
+                            });
+                        }
+                        component.set("v.listRecordTypes" ,recordTypeOptions);
+                    } else {
+                        helper.sendToast("Failed with state: " + state, err[0].message);
                     }
                 });
         $A.enqueueAction(action);
     },
+
     selectedTypeRecord:function (component, event, helper) {
         console.log(component.get("v.selectedAccountRecordType"));
-        component.set("v.enableAccountForm", true);
+        component.set("v.disabledNext",false);
         component.find("forceRecord").getNewRecord(
         "Account",
         component.get("v.selectedAccountRecordType"),
@@ -30,13 +40,13 @@
             let rec = component.get("v.accountRecord");
             let error = component.get("v.newAccountError");
             if (error || (rec === null)) {
-                console.log("Error initializing record template: " + error);
-                alert('err');
+                helper.sendToast("Error initializing record template", error,"error");
                 return;
             }
         })
     );
     },
+
     insertNewAccount:function(component, event, helper) {
         component.set("v.accountRecord.Name", component.find('accName').get("v.value"));
         component.set("v.accountRecord.Phone", component.find('accPhone').get("v.value"));
@@ -46,47 +56,33 @@
         let tempRec = component.find("forceRecord");
         tempRec.saveRecord($A.getCallback(function(result) {
            console.log(result.state);
-           let  resultsToast = $A.get("e.force:showToast");
            if (result.state === "SUCCESS") {
-               resultsToast.setParams({
-                   "title": "OK",
-                   "message": "The record was saved."
-               });
-               resultsToast.fire();
-               helper.closeModalWindow();
+               helper.sendToast("OK","The record was saved.","error","success");
+               helper.openCreatedRecord(component,result.recordId)
            } else if (result.state === "ERROR") {
-               console.log('Error: ' + JSON.stringify(result.error));
-               resultsToast.setParams({
-                   "title": "Error",
-                   "message": "There was an error saving the record: " + JSON.stringify(result.error)
-               });
-               resultsToast.fire();
+               helper.sendToast("Error",JSON.stringify(result.error,"error"));
            } else {
-               console.log('Unknown problem, state: ' + result.state + ', error: ' + JSON.stringify(result.error));
+               helper.sendToast('Unknown problem, state: ' + result.state,"Error "+ JSON.stringify(result.error),"error");
            }
        }));
     },
+
     closeModal : function(component, event, helper) {
         helper.closeModalWindow();
     },
+
     accountNameChanged: function(component, event, helper) {
         let accNameInput = component.find("accName");
         let accName = accNameInput.get("v.value");
-        console.log('In accountNameChanged(accNameInput): ');
-        console.log(accName);
-        console.log(accName.charAt(0).toUpperCase());
         if (accName.length > 10 || (accName.charAt(0) != accName.charAt(0).toUpperCase())
         || (accName.match(/\d+/g) != null) ) {
-
-            accNameInput.setCustomValidity('Enter norm Account');
-            accNameInput.reportValidity();
-            component.set("v.disabledSubmit", true);
-
+            helper.setCustomValid(component,"The name must not exceed 10 characters, must start with a capital letter, and must not contain numbers",true);
+        } else {
+            helper.setCustomValid(component,'',false);
         }
-        else {
-            accNameInput.setCustomValidity('');
-            accNameInput.reportValidity();
-            component.set("v.disabledSubmit", false);
-        }
+    },
+
+    goToAccountForm : function(component, event, helper) {
+        component.set("v.enableSelectRecordType", false);
     }
 });
