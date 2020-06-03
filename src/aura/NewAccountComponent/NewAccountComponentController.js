@@ -23,7 +23,7 @@
                         }
                         component.set("v.listRecordTypes" ,recordTypeOptions);
                     } else {
-                        helper.sendToast("Failed with state: " + state, err[0].message);
+                        helper.sendToast("Failed with state: " + state, err[0].message,"error");
                     }
                 });
         $A.enqueueAction(action);
@@ -56,7 +56,7 @@
         tempRec.saveRecord($A.getCallback(function(result) {
            console.log(result.state);
            if (result.state === "SUCCESS") {
-               helper.sendToast("OK","The record was saved.","error","success");
+               helper.sendToast("OK","The record was saved.","success");
                helper.openCreatedRecord(component,result.recordId)
            } else if (result.state === "ERROR") {
                helper.sendToast("Error",JSON.stringify(result.error,"error"));

@@ -26,7 +26,7 @@
             <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
                 <aura:if isTrue="{!v.enableSelectRecordType}">
                     <lightning:radioGroup name="radioGroupRequired"
-                                          label="Radio Group"
+                                          label="Сhoose record type: "
                                           options="{! v.listRecordTypes}"
                                           value="{! v.selectedAccountRecordType}"
                                           type="radio"

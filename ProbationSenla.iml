@@ -29,10 +29,19 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="AccountController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AccountControllerTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="AccountManager" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountManager_Test" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="AccountManagerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AccountToTriggerHAmdler" />
@@ -51,15 +60,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="ContactsTodayControllerTest" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="FactoryAccount" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="FactoryContact" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="FactoryFeedItem" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="FeedItemManager" />
@@ -83,6 +83,12 @@
                             <option name="name" value="ForgotPasswordControllerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="MessagingController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MessagingControllerTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="MyProfilePageController" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -95,11 +101,25 @@
                             <option name="name" value="OpportunityAlertControllerTest" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="PartnerNetworkConnectionManager" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="PartnerNetworkConnectionManagerTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="RecordTypeController" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="RecordTypeControllerTest" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="RecordTypeManager" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="RecordTypeManagerTest" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -117,6 +137,30 @@
                           <MetadataEntry>
                             <option name="name" value="SiteRegisterControllerTest" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SyncAccountBetweenTwoOrg" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SyncAccountBetweenTwoOrgTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TestLightningControler" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TimeController" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="UpdateAndS2SAllAccountBatch" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="UpdateAndS2SAllAccountBatchTest" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="UserManager" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="UserManagerTest" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="ApexClass" />
@@ -125,6 +169,9 @@
                     <MetadataType>
                       <option name="entries">
                         <list>
+                          <MetadataEntry>
+                            <option name="name" value="SiteFooter" />
+                          </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SiteHeader" />
                           </MetadataEntry>
@@ -140,7 +187,66 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="AnswersHome" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="BandwidthExceeded" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ChangePassword" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Exception" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="FileNotFound" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ForgotPassword" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ForgotPasswordConfirm" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="IdeasHome" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="InMaintenance" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="MyProfilePage" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteHome" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteLogin" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteRegister" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteRegisterConfirm" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="SiteTemplate" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="StdExceptionTemplate" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Unauthorized" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="UnderConstruction" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="ApexPage" />
+                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="ApexTestSuite" />
@@ -148,6 +254,7 @@
                     </MetadataType>
                     <MetadataType>
                       <option name="name" value="ApexTrigger" />
+                      <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
                       <option name="entries">
@@ -214,20 +321,11 @@
                             <option name="name" value="DeleteContact" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="ldsAccView" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="NewAccountComponent" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="onBadgetHiden" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="OpportunityAlert" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="slds" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="SldsTest" />
@@ -243,6 +341,27 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="TimeByTimeZon" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="TimeByTimeZoneComponent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="accDisplay" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="accEdit" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="eleteContactComponent" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="ldsAccView" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="onBadgetHiden" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="slds" />
                           </MetadataEntry>
                         </list>
                       </option>
@@ -392,9 +511,6 @@
                             <option name="name" value="standard__Platform" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard__PublicSector" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="standard__Sales" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -429,7 +545,16 @@
                             <option name="name" value="Account.Active__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.CheckedFromTask4__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.CurrentDateTime__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.CustomerPriority__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.Date_Synchronized__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.NumberofLocations__c" />
@@ -444,7 +569,13 @@
                             <option name="name" value="Account.SLA__c" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Account.SomeContact__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="Account.UpsellOpportunity__c" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Activity.CreatedDate__c" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Case.EngineeringReqNumber__c" />
@@ -560,6 +691,9 @@
                           <MetadataEntry>
                             <option name="name" value="University__c.City__c" />
                           </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="User.getToEmailSyncData__c" />
+                          </MetadataEntry>
                         </list>
                       </option>
                       <option name="name" value="CustomField" />
@@ -649,12 +783,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AuthorizationFormText" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BusinessLicense" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BusinessProfile" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Campaign" />
@@ -1043,12 +1171,6 @@
                             <option name="name" value="standard-AuthorizationFormText" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="standard-BusinessLicense" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="standard-BusinessProfile" />
-                          </MetadataEntry>
-                          <MetadataEntry>
                             <option name="name" value="standard-Campaign" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1143,6 +1265,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="standard-OtherUserProfile" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="standard-PartnerNetworkConnection" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="standard-Pricebook2" />
@@ -1240,11 +1365,27 @@
                             <option name="name" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/AcceptanceEmail" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/DeactivationEmail" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/Grant_less_50" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="unfiled$public/InvitationEmail" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="unfiled$public/MarketingProductInquiryResponse" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/RejectionEmail" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1293,6 +1434,10 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="unfiled$public/SupportSelfServiceResetPassword" />
+                            <option name="parentFolder" value="unfiled$public" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="unfiled$public/UpdateConnEmail" />
                             <option name="parentFolder" value="unfiled$public" />
                           </MetadataEntry>
                         </list>
@@ -1369,6 +1514,9 @@
                             <option name="name" value="Del" />
                           </MetadataEntry>
                           <MetadataEntry>
+                            <option name="name" value="Home_Page_Default" />
+                          </MetadataEntry>
+                          <MetadataEntry>
                             <option name="name" value="LightningSalesConsole_UtilityBar" />
                           </MetadataEntry>
                           <MetadataEntry>
@@ -1386,13 +1534,16 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="Account" />
+                            <option name="name" value="ContactCaseCreatedTimeToTask" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Delete_Contact_by_Email" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="test" />
+                            <option name="name" value="takeContact" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="task4" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="test1" />
@@ -1410,13 +1561,16 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
-                            <option name="name" value="Account" />
+                            <option name="name" value="ContactCaseCreatedTimeToTask" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Delete_Contact_by_Email" />
                           </MetadataEntry>
                           <MetadataEntry>
-                            <option name="name" value="test" />
+                            <option name="name" value="takeContact" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="task4" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="test1" />
@@ -1751,6 +1905,9 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.PlatinumandGoldSLACustomers" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.justify06" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Activity.AllActivities" />
@@ -2125,6 +2282,13 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="SyncAccountTask5" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
                       <option name="name" value="PermissionSet" />
                       <option name="wildcard" value="false" />
                     </MetadataType>
@@ -2385,6 +2549,9 @@
                         <list>
                           <MetadataEntry>
                             <option name="name" value="Account.Button" />
+                          </MetadataEntry>
+                          <MetadataEntry>
+                            <option name="name" value="Account.CustomAccRecType" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="Account.Nobutton" />
@@ -2858,9 +3025,6 @@
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="AuthorizationFormDataUse" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="BusinessLicense" />
                           </MetadataEntry>
                           <MetadataEntry>
                             <option name="name" value="CalendarModel" />

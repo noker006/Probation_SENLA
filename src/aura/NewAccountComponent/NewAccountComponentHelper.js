@@ -21,7 +21,6 @@
     },
     setCustomValid: function(component,errorMess,disabledSubmit) {
         let accNameInput = component.find("accName");
-        let accName = accNameInput.get("v.value");
         accNameInput.setCustomValidity(errorMess);
         accNameInput.reportValidity();
         component.set("v.disabledSubmit", disabledSubmit);
